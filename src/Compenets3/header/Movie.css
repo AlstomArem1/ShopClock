@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #f1c40f,#90c98b);
+}
+.Shop{
+    background: rgb(46, 166, 196);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1080;
+}
+.Shop .shop_pt {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 900;
+}
+.length {
+    background: red;
+    padding: 3px 10px;
+    border-radius: 60%;
+    color: #90c98b;
+    
+}

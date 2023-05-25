@@ -1,0 +1,62 @@
+.carts .Carts_Box .btn1 {
+    padding: 2px 7px;
+    margin-right: 5px;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+    font-size: 17px;
+}
+.carts .Carts_Box .btn2{
+    padding: 2px 5px;
+    margin-left: 5px;
+    border-start-end-radius: 15px;
+    border-end-end-radius: 15px;
+    font-size: 17px;
+}
+.carts .Carts_Box .inputtext {
+    width: 30px;
+    height: 30px;
+}
+
+.carts {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    
+    
+    
+}
+.carts .Carts_Box{
+    background: linear-gradient(30deg, #95ceaa, #57cebe);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.carts .Carts_Box img {
+    margin: 20px 10px;
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgb(56, 55, 51);
+    background-color: #706868;
+}
+.carts .Carts_Box .font_name{
+    /* border: 1px solid rgb(17, 128, 41); */
+}
+.Delete {
+    font-size: 40px;
+}
+.buy_shop {
+    padding: 10px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-size: 900;
+    border-radius: 12px;
+    border: none;
+    background: #41c070;
+}
