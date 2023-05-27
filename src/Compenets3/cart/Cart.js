@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { AppContext } from "../../AppContext"
-import imgles from "./Cart1.jpg";
+import imgles from "./hotcart.jpg";
 import { MdAutoDelete } from "react-icons/md"
 import "./Cart.css";
 
@@ -21,7 +21,7 @@ export default function Cart() {
                             {item.qty}
                             <button className="btn2" onClick={() => changeSum(item.id)}>+</button>
                         </div>
-                        <h2>Gia tien</h2>
+                        <h2>${100.000*item.qty}</h2>
                         <button className="buy_shop" onClick={handle_sweel}>Buy</button>
                         <div className="Delete" onClick={() => {
                             DeleteMode(item.id)

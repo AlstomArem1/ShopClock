@@ -1,0 +1,233 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.Home {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(30deg, #72b6e4, #aa59ec, #520f63);
+}
+
+.Home .Home_web1 {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Home .Home_web1 .WordPress {
+
+    color: #fff;
+    width: 500px;
+    font-size: 17px;
+    margin: 100px 10px;
+
+}
+
+.Home .Home_web1 .WordPress p {
+    font-size: 15px;
+}
+
+.Home .Home_web1 .WordPress button{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 12px 10px;
+    border-radius: 30px;
+    border: none;
+    transition: 1s;
+    background: linear-gradient(45deg, #c04ca7, #9b59b6, #b817f8);
+}
+
+
+.Home .Home_web1 .WordPress button:hover{
+    background: yellowgreen;
+    color: #9a0cdb;
+}
+
+
+
+
+
+.Home .Home_web1 .VideoPress {
+    /* border: 1px solid green; */
+
+}
+
+.Home .Home_web1 .VideoPress .Video iframe {
+    width: 600px;
+    height: 300px;
+}
+
+.Home .Home_web2 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.Home .Home_web2 .imges1 {
+    width: 100%;
+    height: 100%;
+}
+
+.Home .Home_web2 .imges1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.Home .Home_web2 .imges2 {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.Home .Home_web2 .imges2 img {
+    width: 100%;
+    height: 178px;
+}
+
+.Home .Home_web3 {}
+
+.Home .Home_web3 .sp_icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+
+}
+
+.Home .Home_web3 .sp_icon i {
+    font-size: 100px;
+    width: calc(80% / 4);
+    border-radius: 12px;
+    margin: 20px 5px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    display: flex;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.Home .Home_web3 .sp_icon i:hover {
+    transform: scale(1.2);
+    background: #6591cc;
+}
+
+.Home .Home_web4 .clocked {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 150px;
+    align-items: center;
+}
+
+.Home .Home_web4 .clocked h1 {
+    font-size: 80px;
+    background: rgb(224, 13, 13);
+    width: 100%;
+    color: rgb(245, 231, 31);
+}
+
+.Home .Home_web5 .nox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    margin: 20px 10px;
+}
+
+.Home .Home_web5 .nox .rol {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: calc(90% / 3);
+    justify-content: center;
+    display: flex;
+    margin: 10px 5px;
+    background: #fff;
+    border-radius: 12px;
+
+}
+
+.Home .Home_web5 .nox .rol .rol_icon i {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 60%;
+    margin-right: 20px;
+    color: red;
+    background: #fff;
+}
+
+.Home .Home_web5 .nox .rol .blog_rol p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #999;
+}
+
+.Home .Home_web5 .nox .rol .blog_rol h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.Home .Home_web5 .nox button {
+    padding: 8px 20px;
+    background: linear-gradient(30deg, #b525c2, #e0b6b6, #8d0e0e);
+}
+
+.footer {
+    font-size: 15px;
+    background: #1928af;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer .footer_end {
+    display: flex;
+   
+}
+
+.footer .footer_end .col {
+    margin-left: 100px;
+
+}
+
+.footer .footer_end .col .imgesl-icon {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.footer .footer_end .col .imgesl-icon span {
+    margin-left: 20px;
+}
+
+.footer .footer_end .col .imgesl-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer .footer_end .col .mart {
+    display: flex;
+}
+
+.footer .footer_end .col .blog_mart span {
+    font-size: 30px;
+
+}
+
+.footer .footer_end .col .mart i {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 30px;
+    padding: 0px 12px;
+    border-radius: 60%;
+    margin-right: 20px;
+    color: red;
+    background: #fff;
+}

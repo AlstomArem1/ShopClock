@@ -1,11 +1,11 @@
 import { AppContext } from "../../AppContext";
 import { useContext } from "react";
-import imgl from "./Product1.jpg";
+import imgl from "./hotcart.jpg";
 import { AiTwotoneStar } from "react-icons/ai";
 import "./Product.css";
 
 export default function Product() {
-    const { product, addCart } = useContext(AppContext);
+    const { product, addCart,handle_next } = useContext(AppContext);
     return (
        <div className="product_shopes">
     
@@ -18,7 +18,8 @@ export default function Product() {
                    <p className="p1">Fossil</p>
                    <h3 className="blog_size">Product:{item.name}</h3>
                    <p className="p2">$100.000 - $300.000</p>
-                   <button className="button" onClick={() => addCart(item.id)}>Buy Now</button>
+                   <button className="button" onClick={handle_next}>Buy Now</button>
+                   <button className="button" onClick={() => addCart(item.id)}>Order</button>
                    <div className="product_icon">
                        <i><AiTwotoneStar /></i>
                        <i><AiTwotoneStar /></i>

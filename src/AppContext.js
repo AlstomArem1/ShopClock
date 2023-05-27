@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import axios from "axios";
 import  swal  from "sweetalert";
+import moment from "moment";
 export const AppContext = createContext({});
 export const AppProvider = ({ children }) => {
     const [show, setShow] = useState(false); // ko co show
@@ -43,14 +44,14 @@ export const AppProvider = ({ children }) => {
     console.log(cart);
 
     const changeMinus = (id) => {
-        const kq = cart.map((item) =>
-            id === item.id ? { ...item, qty: item.qty - 1 } : item
+        const kq = cart.map((item) =>         
+            id === item.id ? { ...item, qty: item.qty - (item.qty > 1 ? 1:0)}  : item 
         );
         setCart(kq);
     }
     const changeSum = (id) => {
-        const kq = cart.map((item) =>
-            id === item.id ? { ...item, qty: item.qty + 1 } : item
+        const kq = cart.map((item) => 
+            id === item.id ? { ...item, qty: item.qty + (item.qty < 10 ? 1:0) } : item
         );
         setCart(kq);
     }
@@ -66,6 +67,25 @@ export const AppProvider = ({ children }) => {
             button: "YES",
         });
     }
+    const handle_next = () => {
+        swal({
+            title: "Complete!",
+            text: "payment methods",
+            icon: "success",
+            button: "YES",
+        });
+    }
+    const hour = moment().format('hh');
+    const minet = moment().format('mm');
+    const sec = moment().format('ss');
+    const today = moment().format('MMMM');
+    const [time, setTime] = useState();
+    const Times = () => {
+        const sec = moment().format('ss');
+        setTime(sec)
+    }
+    setInterval(Times,1000)
+    
     return (
         <AppContext.Provider
             value={{
@@ -78,7 +98,13 @@ export const AppProvider = ({ children }) => {
                 changeMinus,
                 changeSum,
                 DeleteMode,
-                handle_sweel
+                handle_sweel,
+                today,
+                hour,
+                minet,
+                sec,
+                time,
+                handle_next
             }}>
             {children}
         </AppContext.Provider>
